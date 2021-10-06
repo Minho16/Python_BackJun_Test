@@ -1,0 +1,5 @@
+x = int(input())
+
+for i in range(x):
+    print(i+1)
+    i += 1    
