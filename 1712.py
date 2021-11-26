@@ -9,15 +9,15 @@
 
 import math
 
-A, B, C = map(int,input("Give me the fix cost, production cost per laptop and the selling price: ").split())
+A, B, C = map(int,input().split())
 
 if (B>=C):    
     print(str(-1))
 else: 
     if (A/(C-B)) - int((A/(C-B))) == 0:  
-        print(str(math.ceil(A/(C-B))+1))        
+        print(math.ceil(A/(C-B))+1)       
     else:
-        print(str(math.ceil(A/(C-B)))) 
+        print(math.ceil(A/(C-B))) 
         
 # 위 문제는 아래와 같이 count로 해결할 경우 시간이 오래 걸림
 '''
